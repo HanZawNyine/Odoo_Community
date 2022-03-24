@@ -10,6 +10,7 @@
                 <field name="age"/>
                 <field name="gender"/>
                 <field name="note"/>
+                 <field name="responsible_id"/>
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -23,6 +24,9 @@
                                     </li>
                                     <li>Gender :
                                         <field name="gender"/>
+                                    </li>
+                                    <li>Responsible :
+                                         <field name="responsible_id"/>
                                     </li>
                                 </ul>
                             </div>
@@ -39,6 +43,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="responsible_id"/>
                 <field name="age"/>
                 <field name="gender"/>
                 <field name="note"/>
@@ -69,6 +74,7 @@
                     <group>
                         <group>
                             <field name="name"/>
+                             <field name="responsible_id"/>
                             <field name="age"/>
                         </group>
                         <group>

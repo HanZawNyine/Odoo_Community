@@ -18,6 +18,7 @@ class HospitalPatient(models.Model):
     state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
                               ('done', 'Done'), ('cancel', 'Cancel')],
                              default='draft', string="Status", tracking=True)
+    responsible_id = fields.Many2one(comodel_name='res.partner', string='Responsible')
 
     def action_confirm(self):
         for rec in self:
