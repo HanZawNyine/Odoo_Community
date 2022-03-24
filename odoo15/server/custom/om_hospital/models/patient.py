@@ -15,3 +15,6 @@ class HospitalPatient(models.Model):
         ('other', 'Other'),
     ], required=True, default='other', tracking=True)
     note = fields.Text(string='Description', tracking=True)
+    state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
+                              ('done', 'Done'), ('cancel', 'Cancel')],
+                             default='draft', string="Status", tracking=True)
