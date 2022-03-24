@@ -9,10 +9,12 @@
     'category': 'Productivity',
     'website': 'https://www.hanzawnyine.com',
     'depends': [
+        'sale'
     ],
     'data': [
         'security/ir.model.access.csv',
-        'views/patient.xml'
+        'views/patient.xml',
+        'views/sale.xml',
     ],
     'demo': [],
     'installable': True,
