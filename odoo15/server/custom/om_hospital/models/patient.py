@@ -18,3 +18,19 @@ class HospitalPatient(models.Model):
     state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
                               ('done', 'Done'), ('cancel', 'Cancel')],
                              default='draft', string="Status", tracking=True)
+
+    def action_confirm(self):
+        for rec in self:
+            rec.state = 'confirm'
+
+    def action_done(self):
+        for rec in self:
+            rec.state = 'done'
+
+    def action_draft(self):
+        for rec in self:
+            rec.state = 'draft'
+
+    def action_cancel(self):
+        for rec in self:
+            rec.state = 'cancel'

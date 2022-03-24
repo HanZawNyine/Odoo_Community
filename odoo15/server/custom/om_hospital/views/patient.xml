@@ -52,8 +52,18 @@
         <field name="arch" type="xml">
             <form>
                 <header>
+                    <button name="action_confirm" id="button_confirm" string="Confirm"
+                            confirm="Are you sure that you need to confirm this record?"
+                            class="btn-primary" type="object" states="draft"/>
+                    <button name="action_done" id="button_done" string="Mark as Done"
+                            class="btn-primary" type="object" states="confirm"/>
+                    <button name="action_draft" id="button_draft" string="Set To Draft"
+                            class="btn-primary" type="object" states="cancel,done"/>
+                    <button name="action_cancel" id="button_cancel" string="Cancel"
+                            confirm="Are you sure that you need to Cancel ?"
+                            states="done,draft,confirm" type="object"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
-<!--                    options="{'clickable':'1'}"-->
+                    <!--                    options="{'clickable':'1'}"-->
                 </header>
                 <sheet>
                     <group>
