@@ -49,6 +49,7 @@ package.json
 # avoid adding it after generation from tsconfig command
 tsconfig.json
 
+.idea
 .github
 addons
 debian
@@ -66,5 +67,5 @@ odoo-bin
 README.md
 requirements.txt
 SECURITY.md
-steup.cfg
+setup.cfg
 setup.py
