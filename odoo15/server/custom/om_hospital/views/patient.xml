@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-      <record id="view_patient_kanban" model="ir.ui.view">
+    <record id="view_patient_kanban" model="ir.ui.view">
         <field name="name">hospital.patient.kanban</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
@@ -46,7 +46,7 @@
         </field>
     </record>
 
-     <record id="view_patient_form" model="ir.ui.view">
+    <record id="view_patient_form" model="ir.ui.view">
         <field name="name">hospital.patient.form</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
@@ -59,12 +59,17 @@
                             <field name="name"/>
                             <field name="age"/>
                         </group>
-                         <group>
+                        <group>
                             <field name="gender"/>
                             <field name="note"/>
                         </group>
                     </group>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
             </form>
         </field>
     </record>
@@ -83,7 +88,7 @@
                 <group expand="1" string="Group By">
                     <filter string="Gender" name="gender" context="{'group_by':'gender'}"/>
                     <filter string="Patient Name" name="patient_name" context="{'group_by':'name'}"/>
-<!--                    <filter string="Responsible" name="responsible_id" context="{'group_by':'responsible_id'}"/>-->
+                    <!--                    <filter string="Responsible" name="responsible_id" context="{'group_by':'responsible_id'}"/>-->
                 </group>
             </search>
         </field>

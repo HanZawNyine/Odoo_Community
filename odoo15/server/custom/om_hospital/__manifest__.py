@@ -9,7 +9,7 @@
     'category': 'Productivity',
     'website': 'https://www.hanzawnyine.com',
     'depends': [
-        'sale'
+        'sale', 'mail'
     ],
     'data': [
         'security/ir.model.access.csv',
