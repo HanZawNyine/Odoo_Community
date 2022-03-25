@@ -16,7 +16,9 @@
         'data/data.xml',
         'views/patient.xml',
         'views/sale.xml',
-        'views/kid_view.xml'
+        'views/kid_view.xml',
+        'views/patient_gender_view.xml',
+
     ],
     'demo': [],
     'installable': True,
