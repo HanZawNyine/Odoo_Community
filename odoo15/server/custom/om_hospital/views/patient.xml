@@ -10,7 +10,7 @@
                 <field name="age"/>
                 <field name="gender"/>
                 <field name="note"/>
-                 <field name="responsible_id"/>
+                <field name="responsible_id"/>
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
@@ -26,7 +26,7 @@
                                         <field name="gender"/>
                                     </li>
                                     <li>Responsible :
-                                         <field name="responsible_id"/>
+                                        <field name="responsible_id"/>
                                     </li>
                                 </ul>
                             </div>
@@ -71,10 +71,15 @@
                     <!--                    options="{'clickable':'1'}"-->
                 </header>
                 <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="reference" readonly="1"/>
+                        </h1>
+                    </div>
                     <group>
                         <group>
                             <field name="name"/>
-                             <field name="responsible_id"/>
+                            <field name="responsible_id"/>
                             <field name="age"/>
                         </group>
                         <group>
