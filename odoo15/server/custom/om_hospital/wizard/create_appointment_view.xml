@@ -28,11 +28,6 @@
         <field name="target">new</field>
     </record>
 
-<!--    <menuitem id="menu_hospital_appointment_root"-->
-<!--              name="Appointments"-->
-<!--              parent="hospital_root"-->
-<!--              sequence="10"/>-->
-
     <menuitem id="create_appointment"
               name="Create Appointment"
               action="action_create_appointment"
