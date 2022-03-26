@@ -14,11 +14,15 @@
     'data': [
         'security/ir.model.access.csv',
         'data/data.xml',
+
+        'wizard/create_appointment_view.xml',
+
         'views/patient_view.xml',
         'views/sale.xml',
         'views/kid_view.xml',
         'views/patient_gender_view.xml',
         'views/appointment_view.xml',
+
     ],
     'demo': [],
     'installable': True,
