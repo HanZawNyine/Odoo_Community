@@ -1,1 +1,1 @@
-from . import patient,sale
+from . import patient,sale,appointment
