@@ -11,11 +11,12 @@
                 </header>
                 <field name="name"/>
                 <field name="patient_id"/>
-                <field name="age"/>
-                <field name="gender"/>
-                <field name="state"/>
-                <field name="date_appointment"/>
-                <field name="date_checkup"/>
+                <field name="age" optional="show"/>
+                <field name="gender" optional="show"/>
+                <field name="state" optional="show"/>
+                <field name="date_appointment" optional="show"/>
+                <field name="date_checkup" optional="hide"/>
+                <field name="note" optional="show"/>
             </tree>
         </field>
     </record>
