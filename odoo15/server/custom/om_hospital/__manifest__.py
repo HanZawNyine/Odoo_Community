@@ -22,6 +22,8 @@
         'views/kid_view.xml',
         'views/patient_gender_view.xml',
         'views/appointment_view.xml',
+        'views/doctor_view.xml',
+
 
     ],
     'demo': [],

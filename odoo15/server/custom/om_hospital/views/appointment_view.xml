@@ -102,7 +102,7 @@
     <menuitem id="menu_hospital_appointment_root"
               name="Appointments"
               parent="hospital_root"
-              sequence="10"/>
+              sequence="20"/>
 
     <menuitem id="menu_hospital_appointment"
               name="Appointments"
